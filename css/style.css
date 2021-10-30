@@ -67,8 +67,8 @@ a {
 }
 
 .category-grid span {
-    margin-top: 5px;
-    font-size: 15px;
+    margin-top: 10px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -83,8 +83,9 @@ a {
 }
 
 .category-link:hover {
-    border: solid 1px black;
+    border: solid 1px #5E69E9;
     transition: border 0.25s;
+    color: black;
 }
 
 .book {
