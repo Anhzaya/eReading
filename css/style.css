@@ -47,6 +47,10 @@ a {
     font-size: 14px;
 }
 
+.nav-link:hover {
+    color: #5E69E9;
+}
+
 .header h4 {
     color: white;
 }
@@ -195,6 +199,33 @@ h4, h5 {
         display: block;
     }
 }
+
 .btn {
     font-size: 14px !important;
+}
+
+.category-list a {
+    color: black;
+    background-color: #F7F7F7;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.category-list a:hover {
+    color: #5E69E9;
+    box-shadow: 0 0 10px lightgray;
+    transition: box-shadow 0.25s;
+    transition: color 0.25s;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: #5E69E9;
+    transition: color 0.25s;
 }
