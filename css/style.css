@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter.ttf);
+}
+
+body {
+    background-color: #F7F7FC;
+    font-family: Inter;
+    font-size: 16px !important;
+}
+
+header {
+    background-color: #5E69E9;
+}
+
+footer {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sub-header {
+    background-color: white;
+}
+
+.phone-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sub-header {
+        display: none;
+    }
+    .phone-menu {
+        display: block;
+        background: url(../assets/icons/menu.svg);
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.nav-link {
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
+
+.header h4 {
+    color: white;
+}
+
+.header h6 {
+    color: #F7F7FC;
+    font-weight: normal;
+}
+
+.category-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-grid span {
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.category-link {
+    color: #2a2a2a;
+    width: 150px;
+    padding-block: 10px;
+    border: solid 1px white;
+    margin-inline: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.category-link:hover {
+    border: solid 1px black;
+    transition: border 0.25s;
+}
+
+.book {
+    margin-right: 15px;
+    color: black;
+}
+
+.book div {
+    display: flex;
+    flex-direction: column;
+}
+
+.book:last-of-type {
+    margin-right: 0px;
+}
+
+.book span {
+    margin-top: 5px;
+}
+
+input {
+    background-color: #F7F7F7;
+    border: none;
+    font-size: 14px;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: 0 0 10px lightgray;
+}
+
+textarea {
+    background-color: #F7F7F7;
+    font-size: 14px;
+    border: none;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+span {
+    font-size: 14px;
+}
+
+label {
+    font-size: 14px;
+}
+
+h4, h5 {
+    font-weight: bold;
+}
+
+.scrollable {
+    overflow: auto;
+}
+
+.header-title {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.header-description {
+    font-size: 14px;
+    color: white;
+}
+
+.phone-content-filter {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px !important;
+    }
+    .header-title {
+        font-size: 18px !important;
+    }
+    .header-description {
+        font-size: 12px;
+    }
+    .searchbar {
+        display: none !important;
+    }
+    span, label {
+        font-size: 12px !important;
+    }
+    .category-list {
+        display: none;
+    }
+    .content-filter {
+        display: none !important;
+    }
+    .phone-content-filter {
+        display: block;
+    }
+}
+.btn {
+    font-size: 14px !important;
+}
