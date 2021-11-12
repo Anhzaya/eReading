@@ -138,51 +138,152 @@ class Home {
 }
 
 class Search {
-    build = () => {}
+    build = () => {
+        let content = document.getElementById("content");
+        content.innerHTML = `
+        <div class="content phone-content-filter mt-3">
+            <h5>Шүүлтүүр</h5>
+            <div class="d-flex flex-column">
+                <span class="mb-1 form-title">Хэвлэсэн он</span>
+                <div class="d-flex">
+                    <input name="published_year" />
+                    <a class="btn btn-light btn-sm ms-2">Хайх</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex mt-3">
+            <section class="content col-lg-9" id="search-result">
+                <h4 class="mb-3">Хайлтын үр дүн</h4>
+                <div class="d-flex mb-3">
+                    <img src="./assets/img/no-img.png" alt="book" width="100" />
+                    <div class="ms-3">
+                        <h5>Бүтээлийн нэр</h5>
+                        <p>Тайлбар</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <img src="./assets/img/no-img.png" alt="book" width="100" />
+                    <div class="ms-3">
+                        <h5>Бүтээлийн нэр</h5>
+                        <p>Тайлбар</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <img src="./assets/img/no-img.png" alt="book" width="100" />
+                    <div class="ms-3">
+                        <h5>Бүтээлийн нэр</h5>
+                        <p>Тайлбар</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <img src="./assets/img/no-img.png" alt="book" width="100" />
+                    <div class="ms-3">
+                        <h5>Бүтээлийн нэр</h5>
+                        <p>Тайлбар</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <img src="./assets/img/no-img.png" alt="book" width="100" />
+                    <div class="ms-3">
+                        <h5>Бүтээлийн нэр</h5>
+                        <p>Тайлбар</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content ms-3 col-lg-3 content-filter">
+                <div class="d-flex align-items-md-center">
+                    <img src="assets/icons/filter.svg" width="20" style="margin-top: -8px;" class="me-2" />
+                    <h5>Шүүлтүүр</h5>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="mb-1 form-title">Хэвлэсэн он</span>
+                    <div class="d-flex">
+                        <input name="published_year" />
+                        <a class="btn btn-light btn-sm ms-2">Хайх</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        `
+    }
 }
 
 class Author {
-    build = () => {}
+    build = () => {
+        let content = document.getElementById("content");
+        content.innerHTML = `
+        <div class="content mt-3" style="height: 95vh;">
+            <div class="d-flex">
+                <img src="./assets/img/no-img.png" alt="author" width="150" />
+                <div class="ms-3">
+                    <h4>Зохиогчийн нэр</h4>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <h4>Бүтээлүүд</h4>
+                <div class="d-flex scrollable">
+                    <a class="book" href="content.html">
+                        <div>
+                            <img src="./assets/img/no-img.png" alt="book" width="100" />
+                            <span>Бүтээлийн нэр</span>
+                        </div>
+                    </a>
+                    <a class="book" href="content.html">
+                        <div>
+                            <img src="./assets/img/no-img.png" alt="book" width="100" />
+                            <span>Бүтээлийн нэр</span>
+                        </div>
+                    </a>
+                    <a class="book" href="content.html">
+                        <div>
+                            <img src="./assets/img/no-img.png" alt="book" width="100" />
+                            <span>Бүтээлийн нэр</span>
+                        </div>
+                    </a>
+                    <a class="book" href="content.html">
+                        <div>
+                            <img src="./assets/img/no-img.png" alt="book" width="100" />
+                            <span>Бүтээлийн нэр</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        `
+    }
 }
 
 class Contact {
-    build = () => {}
+    build = () => {
+        let content = document.getElementById("content");
+        content.innerHTML = `
+        <div class="content mt-3">
+            <h4>ХОЛБОО БАРИХ</h4>
+            <p>Бидэнд илгээх саналаа доорх формд оруулан илгээнэ үү.</p>
+            <form>
+                <div class="d-flex flex-column">
+                    <label class="mb-2">Таны нэр</label>
+                    <input name="name" class="col-lg-4 col-sm-6 col-xs-12" />
+                </div>
+                <div class="d-flex flex-column mt-3">
+                    <label class="mb-2">Таны и-мэйл</label>
+                    <input name="email" class="col-lg-4 col-sm-6 col-xs-12" />
+                </div>
+                <div class="d-flex flex-column mt-3">
+                    <label class="mb-2">Гарчиг</label>
+                    <input name="title" class="col-lg-4 col-sm-6 col-xs-12" />
+                </div>
+                <div class="d-flex flex-column mt-3">
+                    <label class="mb-2">Агуулга</label>
+                    <textarea style="height: 250px;"></textarea>
+                </div>
+                <input type="submit" value="Илгээх" class="btn btn-light mt-3" />
+            </form>
+        </div>
+        `
+    }
 }
-
-{/* <div class="d-flex mt-3">
-    <div class="content col-md-10 col-sm-12">
-        <div class="d-flex">
-            <img src="./assets/img/book1.png" alt="book" width="200" height="300" />
-            <div class="ms-3">
-                <h4>Эсрэг цаг</h4>
-                <a href="./author.html">Зохиолч: Author</a>
-                <p>Асар баялаг Оросын утга зохиолын орчин үеийн хамгийн сод төлөөлөгчдийн нэг
-                    Венедикт Ерофеевийн энэхүү зохиол нь 1973 онд анх Израйлд, 1977 онд Парист хэвлэгдэж барууны уран
-                    зохиолын ертөнцөд дуулиан тарьж байжээ.
-                    Үүнээс хойш хэдэн арав дахин хэвлэгдэж, дэлхийн сонгодог зохиолын тоонд зүй ёсоор орсон энэ бүтээл
-                    Зөвлөлт холбоот улсад дөнгөж 1989 онд хэвлэгдэж байжээ.
-                    Библийн яруу найргийн дотоод уялдаа холбоог нэн чадамгай ашигласан энэ зохиолыг судлаачид
-                    сюрреализмын үнэт бүтээл, тэр дундаа Оросын постмодернизмын нэгэн
-                    оргил хэмээн дуу нэгтэй үнэлжээ. Танд авъяаслаг зохиолч, орчуулагч Дашийн Оюунчимэгийн орчуулснаар
-                    хүргэж байна.</p>
-            </div>
-        </div>
-        <div class="mt-3">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim dolor non vehicula ornare. Donec tincidunt, eros quis pellentesque tincidunt, tortor turpis lobortis odio, non porta odio sem id diam. Etiam condimentum commodo sem, ac porta enim tristique quis. Vivamus malesuada, felis eu gravida sollicitudin, lacus ligula dignissim felis, vitae vestibulum neque sem nec mi. Morbi vulputate orci et metus volutpat elementum eu at quam. Ut dapibus vel neque a maximus. Integer efficitur, neque ac sodales commodo, lectus dui ullamcorper turpis, a porttitor justo nisi et urna. Quisque bibendum aliquet purus id imperdiet. In consectetur est eget enim varius, sed ornare eros efficitur. Morbi sed venenatis metus. Maecenas finibus convallis tincidunt. Suspendisse vitae porttitor sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sit amet euismod nibh, vel molestie velit.
-            </p>
-            <p>Maecenas bibendum maximus orci, ac aliquam tellus commodo luctus. Sed pellentesque pharetra mi, vitae egestas mauris euismod quis. Quisque varius libero eget sagittis pretium. Vestibulum dapibus tellus sit amet suscipit luctus. Etiam id nisl auctor, viverra nibh vitae, luctus tellus. Mauris eleifend, tortor et molestie posuere, nunc ligula aliquet metus, a hendrerit quam leo in orci. Fusce at mauris a mi hendrerit dignissim. Cras cursus mauris a sapien iaculis, a pretium augue suscipit. In hac habitasse platea dictumst. Aliquam sit amet libero est.</p>
-            <p>Aenean sed massa in dolor iaculis pharetra. Duis sem est, sodales in dui id, consectetur lobortis leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec congue risus vel quam tincidunt, vitae congue sem rhoncus. Praesent suscipit nulla turpis, vel varius libero pretium eget. Nulla malesuada pharetra elit convallis commodo. Fusce et metus tristique, fringilla turpis vitae, lobortis sem. Pellentesque lobortis ante et tincidunt tincidunt. Donec aliquam id tellus id porttitor. Proin lacinia venenatis massa eu feugiat. Aliquam erat volutpat. Nulla vitae hendrerit nisi. Nullam pulvinar iaculis venenatis. Integer tincidunt semper libero a pharetra.</p>
-        </div>
-    </div>
-    <section class="content ms-3 col-md-2 category-list d-flex flex-column">
-        <h4 class="mb-3">Ангилал</h4>
-        <a href="./search.html">Шинжлэх ухаан</a>
-        <a href="./search.html">Уран зохиол</a>
-        <a href="./search.html">Үлгэр</a>
-        <a href="./search.html">Хувь хүний хөгжил</a>
-    </section>
-</div> */}
 
 class Content {
     build = () => {
@@ -276,7 +377,7 @@ onClickAuthor = () => {
 }
 
 onClickContact = () => {
-    navigateTo("contract");
+    navigateTo("contact");
 }
 
 onClickContent = () => {
