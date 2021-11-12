@@ -28,86 +28,22 @@
     <nav class="sub-header">
         <div class="container d-flex align-items-md-center justify-content-between">
             <div class="d-flex align-items-md-center">
-                <div><a class="nav-link ps-0" href="./index.html">ЭХЛЭЛ</a></div>
-                <div><a class="nav-link" href="./search.html">НОМ</a></div>
+                <div><a class="nav-link ps-0" href="#" onclick="onClickHome()">ЭХЛЭЛ</a></div>
+                <div><a class="nav-link" href="#" onclick="onClickBook()">НОМ</a></div>
                 <div><a class="nav-link" href="./search.html">СОНИН, СЭТГҮҮЛ</a></div>
-                <div><a class="nav-link" href="./author.html">ЗОХИОЛЧ</a></div>
+                <div><a class="nav-link" href="#" onclick="onClickAuthor()">ЗОХИОЛЧ</a></div>
             </div>
-            <div><a class="nav-link pe-0" href="./contact.html">ХОЛБОО БАРИХ</a></div>
+            <div><a class="nav-link pe-0" href="#" onclick="onClickContact()">ХОЛБОО БАРИХ</a></div>
         </div>
     </nav>
-    <div class="container">
-        <div class="d-flex align-items-md-center mt-4 mb-4 justify-content-center scrollable">
-            <a class="category-link" href="./search.html">
-                <div class="category-grid">
-                    <img src="./assets/icons/scientific.png" alt="scientific" width="40" />
-                    <span>Шинжлэх ухаан</span>
-                </div>
-            </a>
-            <a class="category-link" href="./search.html">
-                <div class="category-grid">
-                    <img src="./assets/icons/world-book.png" alt="literature" width="40" />
-                    <span>Уран зохиол</span>
-                </div>
-            </a>
-            <a class="category-link" href="./search.html">
-                <div class="category-grid">
-                    <img src="./assets/icons/baby-book.png" alt="fairy tale" width="40" />
-                    <span>Үлгэр</span>
-                </div>
-            </a>
-            <a class="category-link" href="./search.html">
-                <div class="category-grid">
-                    <img src="./assets/icons/study.png" alt="self development" width="40" />
-                    <span>Хувь хүний хөгжил</span>
-                </div>
-            </a>
-        </div>
-        <section>
-            <h4>Онцлох бүтээлүүд</h4>
-            <div class="d-flex align-items-md-center mt-3 scrollable">
-                <a class="book" href="content.html">
-                    <div>
-                        <img src="./assets/img/book1.png" alt="book" width="150" />
-                        <span>Номын нэр</span>
-                    </div>
-                </a>
-                <a class="book" href="content.html">
-                    <div>
-                        <img src="./assets/img/book1.png" alt="book" width="150" />
-                        <span>Номын нэр</span>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section class="mt-3 mb-3">
-            <h4>Сүүлд нэмэгдсэн</h4>
-            <div class="d-flex align-items-md-center mt-3 scrollable">
-                <a class="book" href="content.html">
-                    <div>
-                        <img src="./assets/img/book1.png" alt="book" width="150" />
-                        <span>Номын нэр</span>
-                    </div>
-                </a>
-                <a class="book" href="content.html">
-                    <div>
-                        <img src="./assets/img/book1.png" alt="book" width="150" />
-                        <span>Номын нэр</span>
-                    </div>
-                </a>
-                <a class="book" href="content.html">
-                    <div>
-                        <img src="./assets/img/book1.png" alt="book" width="150" />
-                        <span>Номын нэр</span>
-                    </div>
-                </a>
-            </div>
-        </section>
+    <div id="content" class="container">
+        
     </div>
     <footer class="bd-footer py-5 mt-5">
         <div class="container">
             © 2021. Зохиогчийн эрх хуулиар хамгаалагдсан.
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
