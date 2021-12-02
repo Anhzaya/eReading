@@ -94,21 +94,11 @@ class Home {
         const container = document.getElementById("featured-content-container");
         container.innerHTML = "";
         for (let i = 0; i < data.length; i++) {
-            let book = document.createElement("a");
-            book.href = "#";
-            book.onclick = () => onClickContent();
-            book.className = "book";
-            let div = document.createElement("div");
-            let image = document.createElement("img");
-            image.src = "./assets/img/no-img.png";
-            image.alt = "book";
-            image.width = 150;
-            let span = document.createElement("span");
-            span.innerText = data[i].name;
-            div.append(image);
-            div.append(span);
-            book.append(div);
-            container.append(book)
+            let book = document.createElement("book-list-item")
+            book.className = "book"
+            book.data = data[i];
+            book.onclick = () => onClickContent()
+            container.appendChild(book)
         }
     }
 
