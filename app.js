@@ -48,8 +48,9 @@ class Home {
             ).catch(err => console.log(err))
         }).catch(error => console.log(error))
 
-        fetch("/books", {
-            method: "GET"
+        fetch("http://localhost:8081/books", {
+            method: "GET",
+            mode: "no-cors"
         }).then(response => {
             response.json().then(result => this.setupFeaturedComponent(result)
             ).catch(err => console.log(err))
