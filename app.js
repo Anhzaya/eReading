@@ -48,11 +48,8 @@ class Home {
             ).catch(err => console.log(err))
         }).catch(error => console.log(error))
 
-        fetch("https://api.jsonbin.io/b/618de89b820eda3cc81c2436", {
-            method: "GET",
-            headers: {
-                "secret-key": "$2b$10$y1oW0SJgZ.ymzBnRxCr95uaCOt7d98nGbiqHEJBJDrKEiMxVAyZm."
-            }
+        fetch("/books", {
+            method: "GET"
         }).then(response => {
             response.json().then(result => this.setupFeaturedComponent(result)
             ).catch(err => console.log(err))
