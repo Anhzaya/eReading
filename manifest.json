@@ -1,0 +1,9 @@
+{
+    "name": "eReading",
+    "short_name": "eReading",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#F7F7F7",
+    "theme_color": "#5E69E9",
+    "orientation": "portrait-primary"
+  }
