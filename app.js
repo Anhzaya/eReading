@@ -57,7 +57,7 @@ class Home {
             ).catch(err => console.log(err))
         }).catch(error => console.log(error))
 
-        fetch("http://localhost:8081/books", {
+        fetch("/api/books", {
             method: "GET",
             mode: "no-cors"
         }).then(response => {
