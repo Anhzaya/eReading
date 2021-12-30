@@ -364,7 +364,8 @@ const content = new Content();
 function navigateTo(name) {
     localStorage.setItem("currentPage", name);
     let content = document.getElementById("content");
-    content.innerHTML = "";
+    if (content)
+        content.innerHTML = "";
     if (name == "home") {
         home.build();
         home.startFetchData();
