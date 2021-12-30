@@ -361,27 +361,7 @@ const author = new Author();
 const contact = new Contact();
 const content = new Content();
 
-onClickHome = () => {
-    navigateTo("home");
-}
-
-onClickBook = () => {
-    navigateTo("book");
-}
-
-onClickAuthor = () => {
-    navigateTo("author");
-}
-
-onClickContact = () => {
-    navigateTo("contact");
-}
-
-onClickContent = () => {
-    navigateTo("content");
-}
-
-navigateTo = (name) => {
+function navigateTo(name) {
     localStorage.setItem("currentPage", name);
     let content = document.getElementById("content");
     content.innerHTML = "";
@@ -399,6 +379,26 @@ navigateTo = (name) => {
         else if (name == "content")
             content.build();
     }
+}
+
+function onClickHome() {
+    navigateTo("home");
+}
+
+function onClickBook() {
+    navigateTo("book");
+}
+
+function onClickAuthor() {
+    navigateTo("author");
+}
+
+function onClickContact() {
+    navigateTo("contact");
+}
+
+function onClickContent() {
+    navigateTo("content");
 }
 
 navigateTo(currentPage);
