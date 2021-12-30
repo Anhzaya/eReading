@@ -7,7 +7,7 @@ if ("serviceWorker" in navigator) {
     })
 }
 
-var currentPage = localStorage.getItem("currentPage");
+// var currentPage = localStorage.getItem("currentPage");
 if (!currentPage)
     currentPage = "home";
 
@@ -362,7 +362,7 @@ const contact = new Contact();
 const content = new Content();
 
 function navigateTo(name) {
-    localStorage.setItem("currentPage", name);
+    // localStorage.setItem("currentPage", name);
     let content = document.getElementById("content");
     if (content)
         content.innerHTML = "";
