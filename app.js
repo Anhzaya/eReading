@@ -355,11 +355,11 @@ class Content {
     }
 }
 
-this.home = new Home();
-this.search = new Search();
-this.author = new Author();
-this.contact = new Contact();
-this.content = new Content();
+const home = new Home();
+const search = new Search();
+const author = new Author();
+const contact = new Contact();
+const content = new Content();
 
 onClickHome = () => {
     navigateTo("home");
@@ -386,18 +386,18 @@ navigateTo = (name) => {
     let content = document.getElementById("content");
     content.innerHTML = "";
     if (name == "home") {
-        this.home.build();
-        this.home.startFetchData();
+        home.build();
+        home.startFetchData();
     } else {
-        this.home.stopFetchData();
+        home.stopFetchData();
         if (name == "book") {
-            this.search.build();
+            search.build();
         } else if (name == "author")
-            this.author.build();
+            author.build();
         else if (name == "contact")
-            this.contact.build();
+            contact.build();
         else if (name == "content")
-            this.content.build();
+            content.build();
     }
 }
 
