@@ -1,0 +1,30 @@
+{
+  "name": "ereading",
+  "version": "1.0.0",
+  "description": "eReading sample project for Web programming",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "npm": "^8.3.0",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "build": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anhzaya/eReading.git"
+  },
+  "keywords": [
+    "eReading"
+  ],
+  "author": "Ankhzaya.Kh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anhzaya/eReading/issues"
+  },
+  "homepage": "https://github.com/Anhzaya/eReading#readme"
+}
