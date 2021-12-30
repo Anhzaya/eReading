@@ -8,8 +8,10 @@ if ("serviceWorker" in navigator) {
 }
 
 // var currentPage = localStorage.getItem("currentPage");
-if (!currentPage)
-    currentPage = "home";
+// let currentPage = "home";
+window.addEventListener("load", function () {
+    navigateTo("home")
+})
 
 class Home {
     build = () => {
@@ -401,5 +403,3 @@ function onClickContact() {
 function onClickContent() {
     navigateTo("content");
 }
-
-navigateTo(currentPage);
