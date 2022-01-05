@@ -12,6 +12,11 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="manifest" href="manifest.json" />
     <script src="app.js"></script>
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+     </script>
 </head>
 <body>
     <header class="navbar navbar-expand-md">
