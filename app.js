@@ -45,7 +45,7 @@ class Home {
 
     startFetchData = () => {
         this.fetchData();
-        this.interval = setInterval(() => this.fetchData(), 3000);
+        // this.interval = setInterval(() => this.fetchData(), 3000);
     }
 
     fetchData = () => {
