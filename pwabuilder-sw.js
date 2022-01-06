@@ -12,7 +12,7 @@ const assets = [
     "/assets/icons/study.png",
     "/assets/icons/world-book.png",
     "/assets/img/book1.png",
-    "/assets/icons/no-img.png",
+    "/assets/img/no-img.png",
 ]
 
 self.addEventListener("install", installEvent => {
